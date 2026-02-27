@@ -1,3 +1,7 @@
+@extends('layouts.content')
+
+@section('title', 'about')
+
 @section('content')
 <div class="container mt-4">
     <h2>My Skills</h2>
