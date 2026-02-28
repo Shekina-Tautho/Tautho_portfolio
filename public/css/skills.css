@@ -1,0 +1,41 @@
+.header {
+    font-size: 5.3rem;
+    font-weight: bolder;
+    line-height: 5rem;
+    letter-spacing: 8%;
+}
+
+.red {
+    color: #FE0002;
+    margin-bottom: 0;
+}
+
+.light-gray {
+    color: #E5E5E5;
+    margin-bottom: 0;
+}
+
+.dark-gray {
+    color: #636363;
+    margin-bottom: 0;
+}
+
+.description {
+    font-size: 0.9rem;
+}
+
+.blue {
+    background-color: blue
+}
+
+.item {
+    font-size: 1.5rem;
+}
+
+.tech {
+    color: #FE0002;
+}
+
+.tool {
+    color: #636363;
+}
