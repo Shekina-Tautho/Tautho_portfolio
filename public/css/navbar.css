@@ -1,0 +1,16 @@
+body {
+    font-family: "Google Sans", sans-serif;
+    letter-spacing: 7%;
+    font-size: 1.25rem;
+}
+
+a.item {
+    color: #E5E5E5;
+    text-decoration: none;
+    line-height: 1.2rem;
+}
+
+a.item.active {
+    color: #FE0002;
+    font-weight: 600;
+}
