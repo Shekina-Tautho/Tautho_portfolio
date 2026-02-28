@@ -20,7 +20,7 @@ class AboutTableSeeder extends Seeder
                 'description' => 'Just getting started on exploring the world of cloud computing.'
             ],
             [
-                'header1' => null,  
+                'header1' => null,
                 'header2' => null,
                 'description' => 'When I’m not exploring technology, you can usually find me reading a good book or playing cozy games.'
             ]

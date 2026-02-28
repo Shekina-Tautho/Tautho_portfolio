@@ -13,12 +13,35 @@ class SkillsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('skills')->insert([
-            ['skill'=>'HTML', 'level'=>'Advanced'],
-            ['skill'=>'CSS', 'level'=>'Advanced'],
-            ['skill'=>'JavaScript', 'level'=>'Advanced'],
-            ['skill'=>'PHP', 'level'=>'Intermediate'],
-            ['skill'=>'LARAVEL', 'level'=>'Beginner']
+        DB::table('skills_page')->insert([
+            [
+                'header1' => 'tech',
+                'header2' => '&',
+                'header3' => 'tools',
+                'description' => 'Here’s a snapshot of the tools and technologies I’m diving into as I explore web, cloud, and game development.',
+                'tech' => 'HTML',
+                'tool' => 'Git'
+            ],
+            [
+                'header1' => null, 'header2' => null, 'header3' => null, 'description' => null,
+                'tech' => 'CSS', 'tool' => 'Figma'
+            ],
+            [
+                'header1' => null, 'header2' => null, 'header3' => null, 'description' => null,
+                'tech' => 'JavaScript', 'tool' => 'Unity'
+            ],
+            [
+                'header1' => null, 'header2' => null, 'header3' => null, 'description' => null,
+                'tech' => 'Bootstrap', 'tool' => 'VSCode'
+            ],
+            [
+                'header1' => null, 'header2' => null, 'header3' => null, 'description' => null,
+                'tech' => 'PHP', 'tool' => null
+            ],
+            [
+                'header1' => null, 'header2' => null, 'header3' => null, 'description' => null,
+                'tech' => 'Laravel', 'tool' => null
+            ]
         ]);
     }
 }
