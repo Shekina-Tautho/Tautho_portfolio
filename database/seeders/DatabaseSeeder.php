@@ -21,7 +21,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             SkillsTableSeeder::class,
             NavbarItemSeeder::class,
-            AboutTableSeeder::class
+            AboutTableSeeder::class,
+            ProjectsTableSeeder::class,
+            EducationTableSeeder::class,
+            ContactsTableSeeder::class
         ]);
 
     }

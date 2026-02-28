@@ -7,10 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Skill extends Model
 {
-    protected $table = 'skills';
+    protected $table = 'skills_page';
 
     protected $fillTable = [
-        'skill',
-        'level',
+        'header1',
+        'header2',
+        'header3',
+        'description',
+        'tech',
+        'tool'
     ];
 }
