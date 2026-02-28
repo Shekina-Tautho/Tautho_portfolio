@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SkillController;
+use App\Http\Controllers\AboutController;
 
 
-Route::get('/', [SkillController::class, 'index']);
+Route::get('/', [AboutController::class, 'index']);
 
 
 
-Route::get('/about', function () {
-    return view('about');
-});
+
 
 Route::get('/projects', function () {
     return view('projects');

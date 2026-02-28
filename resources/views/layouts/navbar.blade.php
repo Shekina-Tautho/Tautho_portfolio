@@ -11,12 +11,6 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-        rel="stylesheet"
-    >
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 </head>
 <body>
@@ -33,7 +27,7 @@
                 @if ($loop->index < 2)
                     <a
                         href="{{ url($item->route) }}"
-                        class="item {{ request()->is(ltrim($item->route, '/')) ? 'active' : '' }}"
+                        class="item {{ trim($item->route, '/') === '' ? (request()->is('/') ? 'active' : '') : (request()->is(trim($item->route, '/')) ? 'active' : '') }}"
                     >
                         {{ $item->label }}
                     </a>
@@ -46,7 +40,7 @@
                 @if ($loop->index >= 2)
                     <a
                         href="{{ url($item->route) }}"
-                        class="item {{ request()->is(ltrim($item->route, '/')) ? 'active' : '' }}"
+                        class="item {{ trim($item->route, '/') === '' ? (request()->is('/') ? 'active' : '') : (request()->is(trim($item->route, '/')) ? 'active' : '') }}"
                     >
                         {{ $item->label }}
                     </a>
@@ -56,6 +50,3 @@
 
     </div>
 </div>
-
-</body>
-</html>

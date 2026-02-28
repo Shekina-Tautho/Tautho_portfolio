@@ -1,0 +1,29 @@
+.big-image {
+    max-height: 100%;
+    width: 140%;
+    height: auto;
+    object-fit: contain;
+}
+
+.header {
+    color: #E5E5E5;
+    font-size:5rem;
+    letter-spacing: 3%;
+    line-height: 4rem;
+}
+
+.red {
+    color: #FE0002;
+    line-height: 4.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    color: #636363;
+}
+
+.blue
+{
+    background-color: blue;
+}

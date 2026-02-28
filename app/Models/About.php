@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Navbar extends Model
+class About extends Model
 {
-
-    protected $table = 'navbar_items';
+    protected $table = 'about';
 
     protected $fillTable = [
-        'label',
-        'route',
+        'header',
+        'description'
     ];
 }
