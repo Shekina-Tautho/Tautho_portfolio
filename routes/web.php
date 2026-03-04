@@ -7,14 +7,16 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ContactsController;
 
+Route::middleware(['portfolio.log'])->group(function () {
 
-Route::get('/', [AboutController::class, 'index'])
-    ->middleware('portfolio.log');
+    Route::get('/', [AboutController::class, 'index']);
 
-Route::get('/skills', [SkillController::class, 'index']);
+    Route::get('/skills', [SkillController::class, 'index']);
 
-Route::get('/projects', [ProjectController::class, 'index']);
+    Route::get('/projects', [ProjectController::class, 'index']);
 
-Route::get('/education', [EducationController::class, 'index']);
+    Route::get('/education', [EducationController::class, 'index']);
 
-Route::get('/contacts', [ContactsController::class, 'index']);
+    Route::get('/contacts', [ContactsController::class, 'index']);
+
+});
