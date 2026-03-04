@@ -6,7 +6,8 @@ use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ContactsController;
-
+ 
+/**route group */
 Route::middleware(['portfolio.log'])->group(function () {
 
     Route::get('/', [AboutController::class, 'index']);
