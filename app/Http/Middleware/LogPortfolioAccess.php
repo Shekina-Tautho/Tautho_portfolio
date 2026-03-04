@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Log;
 
 class LogPortfolioAccess
 {
@@ -15,6 +16,11 @@ class LogPortfolioAccess
      */
     public function handle(Request $request, Closure $next): Response
     {
+        Log::info('Portfolio page accessed', [
+            'ip' => $request->ip(),
+            'route' => $request->path(),
+            'time' => now(),
+        ]);
         return $next($request);
     }
 }
