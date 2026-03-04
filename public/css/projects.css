@@ -1,0 +1,19 @@
+.header {
+    color:red;
+    font-size: 5rem;
+    letter-spacing: 2%;
+    font-weight: bolder;
+}
+
+.title {
+    font-size: 1.6rem;
+}
+
+.desc {
+    font-size:0.8rem;
+}
+
+.gray {
+    color: #636363;
+}
+
