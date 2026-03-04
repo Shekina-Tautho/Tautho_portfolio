@@ -8,7 +8,8 @@ use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ContactsController;
 
 
-Route::get('/', [AboutController::class, 'index']);
+Route::get('/', [AboutController::class, 'index'])
+    ->middleware('portfolio.log');
 
 Route::get('/skills', [SkillController::class, 'index']);
 
