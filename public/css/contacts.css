@@ -1,0 +1,32 @@
+
+.header {
+    color:red;
+    font-size: 5rem;
+    letter-spacing: 2%;
+    font-weight: bolder;
+}
+
+.desc {
+    font-size:0.8rem;
+    margin-right: 2rem;
+}
+
+.desc:last-child {
+    margin-right: 0;
+}
+
+.gray {
+    color: #636363;
+}
+
+.red {
+    color: #FE0002;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
